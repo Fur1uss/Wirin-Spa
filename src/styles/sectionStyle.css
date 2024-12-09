@@ -1,0 +1,196 @@
+section{
+    padding: 0;
+    margin-top: 3vh;
+    width: 70%;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    margin-bottom: 3vh;
+
+}
+
+
+.sectionTextInfoContainer{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+
+}
+
+.sectionFormularyContainer{
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+
+.sectionTitleText{
+    color: #25221B;
+    font-family: "Readex Pro";
+    font-size: clamp(16px, 5vw, 54px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 60px;
+}
+
+.sectionSubtitleText{
+    color: #25221B;
+    font-family: "Readex Pro";
+    font-size: clamp(24px, 5vw, 30px);
+
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+
+}
+
+.sectionListTitle{
+    color: #25221B;
+    font-family: "Readex Pro";
+    font-size: clamp(16px, 5vw, 44px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.sectionTextList{
+
+    color: #25221B;
+    font-family: "Readex Pro";
+    font-size: clamp(16px, 5vw, 34px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.RRSSContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    width: 100%;
+    height: 20vh;
+}
+
+
+.RRSSTitleText{
+    color: #25221B;
+    text-align: center;
+    font-family: "Readex Pro";
+    font-size: clamp(12px, 4vw, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.RRSSIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 10vh;
+
+}
+
+.RRSSIconIMG{
+    width: 53%;
+    height: 53%;
+
+    object-fit: contain;
+    transition: transform 0.5s;
+    
+}
+
+
+.RRSSIconIMG:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sendButton{
+    width: 30%;
+    height: 40px;
+    background-color: #6AA857;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    
+    font-family: Readex Pro;
+    font-size: 1.2em;
+    color: #FFF;
+    font-weight: bold;
+
+    border: none;
+}
+
+.sendButton:hover{
+    background-color: #4D7D4A;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    section{
+        width: 90%;
+    }
+
+    .sectionTextInfoContainer{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .sectionFormularyContainer{
+        width: 100%;
+        height: 100%;
+    }
+}

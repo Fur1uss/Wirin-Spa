@@ -1,0 +1,104 @@
+footer{
+    padding: 0;
+    margin-top: 20vh;
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    background-color: #25221B;
+}
+
+.footerDivisor{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Readex Pro";
+
+}
+
+.footerTitleText{
+    font-size: clamp(8px, 25px, 25px);
+    color: #FFFFFF;
+    margin-bottom: 1em;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footerList{
+    list-style-type:disc;
+}
+
+.footerListText{
+    font-size: clamp(12px, 20px, 20px);
+    color: #FFFFFF;
+    margin-bottom: 1em;
+
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+    
+}
+
+
+.footerListText:hover{
+    color: #FFD700;
+}
+
+.divisor{
+    width: .05%;
+    height: 65%;
+    background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px){
+    footer{
+        height: 25vh;
+    }
+
+    .footerDivisor{
+        width: 100%;
+        height: 100%;
+    }
+
+    .divisor{
+        width: .5%;
+        height: 60%;
+    }
+
+
+    .footerTitleText{
+        font-size: clamp(8px, 15px, 20px);
+        color: #FFFFFF;
+        margin-bottom: 1em;
+    
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .footerListText{
+        font-size: clamp(12px, 10px, 20px);
+        color: #FFFFFF;
+        margin-bottom: 1em;
+    
+        margin: 0;
+        padding: 0;
+    
+        cursor: pointer;
+        
+    }
+    
+    
+}

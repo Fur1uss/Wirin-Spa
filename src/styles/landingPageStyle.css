@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+
+
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.separatorItem{
+    width: 70%;
+    height: .6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

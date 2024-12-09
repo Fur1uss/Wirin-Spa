@@ -1,0 +1,83 @@
+.carousel-container {
+  width: 100%;
+  height: 8vh; /* Usa un porcentaje del alto de la ventana */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollCarousel 60s linear infinite; /* Aplicar animación para desplazamiento */
+}
+
+.carousel-image {
+  flex: 0 0 auto;
+  width: 8%; /* Ajusta el tamaño de las imágenes en pantallas grandes (más pequeñas) */
+  height: 100%; /* Mantiene la altura completa del contenedor */
+  object-fit: contain; /* Mantiene el aspecto sin deformar */
+  margin: 0 5px; /* Reduce aún más el espacio entre las imágenes */
+}
+
+/* Definición de la animación */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0); /* Comienza en la posición original */
+  }
+  100% {
+    transform: translateX(-100%); /* Mueve todo el carrusel hacia la izquierda */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 1200px) {
+  .carousel-image {
+    width: 10%; /* Cada imagen ocupa un 10% en pantallas grandes */
+    
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollCarousel 60s linear infinite; /* Aplicar animación para desplazamiento */
+  }
+}
+
+/* Media Query para pantallas medianas */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .carousel-image {
+    width: 15%; /* Cada imagen ocupa un 15% en pantallas medianas */
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollCarousel 30s linear infinite; /* Aplicar animación para desplazamiento */
+  }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-image {
+    width: 20%; /* Cada imagen ocupa un 20% en pantallas pequeñas */
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollCarousel 30s linear infinite; /* Aplicar animación para desplazamiento */
+  }
+}
+
+/* Media Query para pantallas extra pequeñas */
+@media (max-width: 480px) {
+  .carousel-image {
+    width: 30%; /* Cada imagen ocupa un 30% en pantallas muy pequeñas */
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollCarousel 30s linear infinite; /* Aplicar animación para desplazamiento */
+  }
+}
