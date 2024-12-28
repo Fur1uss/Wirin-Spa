@@ -33,4 +33,3 @@ WirinConstructora/
 
 Estamos abiertos a sugerencias, ideas y colaboraciones. Si tienes algo que aportar, no dudes en abrir un issue o enviar un pull request.
 
-## 📬 Contacto
